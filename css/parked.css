@@ -1,0 +1,365 @@
+/* -------------------------------------------------------------- 
+Template 516 - Billboard Google JS 
+v1.20101130 
+Description: latest update includes a 2 line ad format for the 
+sponsor result listings.
+-------------------------------------------------------------- */
+
+
+/* Reset
+----------------------------------------------------------------------------------------------------*/	
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body {line-height:1;}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after {content:'';content: none;}
+:focus {outline:0;}
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+table {border-collapse:collapse;border-spacing:0;}
+
+
+
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+ 
+
+
+
+/* Set Defaults
+----------------------------------------------------------------------------------------------------*/	
+html {font-size:100.01%;}
+
+body {font:.9em/1.5 'Helvetica Neue',Arial,sans-serif;}
+body {background:#fff;
+      font:12px arial,sans-serif;
+      }
+
+a:focus {outline:1px dotted invert;}
+img,
+a img {border:0 none;}
+.hide {display:none;}
+
+
+
+
+/* Grid
+----------------------------------------------------------------------------------------------------*/	
+body {text-align:center;margin-top:30px;}
+
+#container {width:754px;margin:15px auto;text-align:left;
+            background:#fff;}
+
+  .custom_2 {}
+
+  .header {height:32px;line-height:32px;background:#272226;}
+
+  #content {}
+
+    .top_bar {height:30px;line-height:30px;margin:1px 0;background:#dfe1d4;}
+    
+    /* Lander */
+    .l_col_1 {float:left;}
+    .l_col_2 {float:right;}
+    
+    /* Results */
+    .r_col_1 {float:left;width:74%;}
+    .r_col_2 {float:right;width:25%;}
+            
+  #footer {margin-top:1px;}
+  
+  .custom_1 {}
+
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/	
+
+
+/* Page Header */
+.header {background:#1b5709;}
+    .header h1 {margin:0 10px;
+                color:#fff;
+                font-family:Verdana;                
+                font-size:18px;
+                font-weight:400;}
+        .header h1 a,
+        .header h1 a:link,
+        .header h1 a:visited {color:#fff;text-decoration:none;}
+        .header h1 b {}
+        
+
+/* Lander > Google Label */
+.top_bar {background:#c44242;}
+    .top_bar p,
+    .top_bar p a {color:#edc6c6;font-weight:700;text-indent:28px;text-decoration:none;}
+
+
+
+
+/* Lander > Primary Links */
+.primary_links {float:left;
+                background:#e2dfb8;
+                width:391px;
+                } 
+    .primary_links_Hdr {display:none;}
+    .primary_links ul {margin:0px ; padding:0px ; float:left;}
+        .primary_links li {margin:0px; padding:0px; height:29px; }
+        .primary_links li a,
+        .primary_links li a:link,       
+        .primary_links li a:visited {display:block;
+                                    width:336px !important;
+                                    width:331px; /* IE6 and non-modern browsers */                                  
+                                    margin-bottom:1px;
+                                    padding:5px 5px 4px 50px;                
+                                    border:1px solid #fff;                   
+                                    background:#f6f6f6 url(../images/i.nuseek.com/images/Themes/T101/bullets/0007.gif) no-repeat 25px 50%;
+                                    background:#fafad9 url('../images/i.nuseek.com/images/Themes/T101/bullets/0006.gif') no-repeat 25px 50%;
+                                    color:#476ec7;
+                                    font:bold 14px arial;
+                                    text-decoration:none;}        
+        .primary_links li:first-child a {}                                                                
+        .primary_links li a:hover {background:#fff url(../images/i.nuseek.com/images/Themes/T101/bullets/0007.gif) no-repeat 30px 50%;
+                                   background:#fbfbf5 url('../images/i.nuseek.com/images/Themes/T101/bullets/0006.gif') no-repeat 30px 50%;
+                                   color:#c03625;}
+          
+        
+ 
+/* Lander > Template Image */
+.template_image {width:360px;overflow:hidden;float:right;}  
+
+
+
+/* Results > Ads */
+
+
+h2,
+h2 a {
+	color:#aaa;
+	font-weight:normal;
+	margin: 20px 0 20px 0;
+	font-size:14px;
+    text-decoration:none;
+    cursor:text;
+	}
+
+.sr,
+.wr,
+.wrc
+	{
+	margin: 0 0 0 25px;
+	}
+
+.wr{ /* ads spacing for between web results and 2nd module of sponsored listings */
+margin-bottom:50px;
+}
+
+.sr li,
+.wr li,
+.wrc li
+    {
+	margin:0 0 15px 0;
+    padding-left:25px;background:transparent url('../images/i.nuseek.com/images/Themes/T101/bullets/0006.gif') no-repeat 0 3px; 
+	}
+	
+.title {
+	display:inline;
+	font-size:16px;
+	color:#0000cc;
+	}
+
+.url{
+	text-decoration:none;
+	font-size:13px;
+	color:#339933;
+    margin:0 0 0 10px;
+    padding:0;
+	}
+
+.abstract{
+    font-size:13px;
+    margin: 2px 0 0 0;
+    }        
+                  
+.sr .sellerRatings {
+	color:#666;
+	font-size:13px;
+	margin:0px;
+	}
+    .sr .sellerRatings a{
+        text-decoration:none;
+        color:#0000cc;
+        }
+.sr .siteLinks ul {
+	float:left;
+	margin:7px 1px 0 15px !important;
+    margin:7px 8px 0 7px;
+    border:none;
+    padding:0 0 3px 0;
+	}
+.siteLinks li {
+	font-size:13px;
+    margin:0px;
+    padding:0px;
+	background:none;
+    }
+.sr .siteLinks a {
+	color:#0000cc;
+	text-decoration:none;
+	}
+
+
+
+/* Clear Floats */
+.siteLinks:after {content:".";display:block;height:0;clear:both;visibility:hidden}
+.siteLinks {display:inline-block}
+.siteLinks {display:block}
+* html .siteLinks {height:1px}
+				
+				
+/*standard web results */				
+
+.wr{
+    margin-top:50px;
+    }
+.wr .url{
+    margin:0px;
+    }        
+
+
+				
+/*compressed web results */
+
+.wrc{
+	margin-top:300px;
+	}
+.wrc .url{
+	font-size:10px;
+	float:right;
+	}
+.wrc h2{
+	font-style:italic;
+	}
+.wrc .title{
+	font-size:14px;
+	}
+.wrc .abstract{
+	font-size:10px;
+	display:block;
+    margin:0px;
+	}
+
+/* ad results END */
+
+
+/* Result > Result Links (right column) */
+.result_links {}
+
+    .result_links_Hdr {margin:25px 15px 0 0;padding:3px 10px;background:#1b5709;}
+    .result_links_Hdr span,
+    .result_links_Hdr span a {color:#fff;font-weight:700;text-decoration:none;}                                            
+                      
+    .result_links ul {margin:0 15px 25px 0;padding:10px;background:#fafad9;}
+        .result_links li {padding:3px 0;}
+        .result_links li a,
+        .result_links li a.link,       
+        .result_links li a:visited {color:#476ec7;text-decoration:none;}                                                               
+        .result_links li a:hover {text-decoration:underline;}
+
+
+
+/* Search Box */
+.search_box_wrap {height:31px;background:#c44242;float:right; margin-top:-3px; width:100%;}
+        .search_box  {text-align:right;position:relative;top:4px;right:15px;}
+        .search_box input {vertical-align:middle;}
+        .search_box .sb_text {width:255px;height:18px;border:1px inset #999;padding-left:3px;color:#000;font-size:16px;}
+        .search_box .sb_button {width:60px;width:60px;
+                                height:22px;height:22px;
+                                background:transparent url(../images/i.nuseek.com/images/Themes/T101/buttons/0007.gif) no-repeat;
+                                background:transparent url('../images/i.nuseek.com/images/Themes/T101/buttons/0006.gif') no-repeat;}
+
+
+
+/* Footer Links */
+#footer_links_wrap {padding:5px 0;             
+                    background:#1b5709;
+                    border-top:1px solid #fff;}
+                             
+    .footer_links {padding:0 12px;
+                   font-size:11px;
+                   font-family: verdana, Sans-Serif;}
+                 
+        .footer_links_Hdr a{float:left;padding-right:7px; margin-left:10px;                          
+                           color:#fff; font-family:verdana, Sans-Serif; font-weight:bold; font-size:11px; text-transform:uppercase; text-decoration:none;}
+        .footer_links ul {float:left;}
+            .footer_links li {float:left;}
+                .footer_links li a,
+                .footer_links li a:link,
+                .footer_links li a:visited {padding:0 7px;border-left:1px solid #fff;color:#fff;text-transform:uppercase;text-decoration:none;}
+                .footer_links li a:hover {color:#ff9;text-decoration:underline;}
+                .footer_links li.first a {padding:0 7px 0 0;border-left:0;}
+                                                  
+                                                 
+/* Status Feedback */
+.status p {margin:15px;padding:5px 5px 5px 30px;border:1px solid #84aec1;border-width:1px 0;
+           background:#dff4ff url('../images/i.nuseek.com/images/Misc/lib/icon_info_1.gif') no-repeat 8px center;
+           font-size:.9em;font-weight:700;color:#000;}
+
+
+/* Custom Content */
+.custom_1, 
+.custom_2 {text-align:center;
+           margin:10px auto;
+           color:#666;
+           font-family:verdana;
+           font-size:11px;
+           font-weight:normal;}
+
+
+
+
+        

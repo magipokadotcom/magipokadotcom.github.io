@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Renkin 3-kyuu Magical? Pokahn at Magipoka.com
+    link(rel='stylesheet', type='text/css', href='./css/parked.css')
+    link(rel='stylesheet', type='text/css', href='./css/style.css')
+  body
+    form#parking_form
+      #container
+        .header
+          h1 Welcome to magipoka.com
+        #content.clearfix
+          .top_bar
+            p#feedback_URL Related Searches
+          #status.status
+            // Container for Status Feedback
+          #primary_links_wrap.1_col_1
+            // Container for Primary Search Links
+            .primary_links
+              ul
+                li
+                  a(href='https://twitter.com/akekodao/status/446298029511831555') まじぽか 2期
+                li
+                  a(href='https://twitter.com/lovely_pig328/status/446291219241377793') まじぽか BD-BOX
+                li
+                  a(href='http://maxfactory.cms.drecom.jp/products.html') 鉄子 フィギュア
+                li
+                  a(href='http://cookpad.com/search/%E9%8C%A6%E7%B3%B8%E5%8D%B5') 錦糸卵
+                li
+                  a(href='http://d.hatena.ne.jp/keyword/%A4%DE%A4%B8%A4%DD%A4%AB%A4%B5%A4%F3') まじぽかさん
+                li
+                  a(href='http://ameblo.jp/momoko-saitou/entry-12113911665.html') 桃子に仕事を！
+          .1_col_2
+            .template_image
+              a(href='https://www.istockphoto.com/photo/attractive-student-gm173633416-746781')
+                img(src='./images/i.nuseek.com/images/template/360x318/ist2_746781_female_student.jpg', alt='Female Student')
+        #footer
+          .search_box_wrap
+            .search_box
+              input#tsearch.sb_text(type='text', name='tsearch', size='50')
+              input.sb_button(type='image', value='Search', src='./images/i.nuseek.com/images/misc/blank.gif')
+              #tsearch2_div.sb_div
+          div(style='clear:both;')
+          #footer_links_wrap.clearfix
+            .footer_links_Hdr
+              a RELATED SEARCHES: 
+            .footer_links
+              ul
+                li.first
+                  a(href='https://momoko-saito.officialsite.co/') Uma
+                li
+                  a(href='http://ayahirano.jp/') Pachira
+                li
+                  a(href='http://ameblo.jp/nabatamehitomi/') Liru
+                li
+                  a(href='https://twitter.com/akekodao') Aiko
+                li
+                  a(style='color: rgba(255, 255, 255, 0);', href='https://twitter.com/nomico_honey') Keimie
+    script(src='./lib/jquery/dist/jquery.min.js')
+    script(src='./main.js')
+    script(type='text/javascript').
+      var sc_project=9688982;
+      var sc_invisible=1;
+      var sc_security="db857e33";
+      var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+      $(function () {
+        if (window.location.hostname === 'www.magipoka.com') {
+          $("<sc"+"ript type='text/javascript' src='" + scJsHost+
+            "statcounter.com/counter/counter.js'></"+"script>")
+            .appendTo(document.body);
+        }
+      });

@@ -1,0 +1,13 @@
+{
+  "name": "magipoka",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "~2.1.0"
+  },
+  "overrides": {
+    "jquery": {
+      "main": "dist/jquery.min.js"
+    }
+  }
+}

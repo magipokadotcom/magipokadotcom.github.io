@@ -1,0 +1,1 @@
+exclude: [CNAME, bower_components, bower.json, node_modules, package.json, gulpfile.js]
